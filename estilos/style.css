@@ -29,7 +29,6 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     height: 540px;
@@ -39,6 +38,7 @@ main {
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 #imagem {
@@ -61,16 +61,40 @@ main {
 
 #formulario > p {
     font-size: 0.8em;
+    margin: 20px 0;
 }
 
 .campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     margin: 5px 0;
     border-radius: 5px;
     height: 40px;
     color: white;
+}
+
+.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+.campo > input {
+    background-color: #86e6e2;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    transform: translateY(-12px);
+}
+
+.campo >input:focus-within {
+    background-color: whitesmoke;
 }
 
 .campo > label {

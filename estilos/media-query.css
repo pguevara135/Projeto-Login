@@ -12,6 +12,8 @@ Paleta de Cores
     Lilas: #5f2c82
 */
 
+/* CONFIGURACAO PARA TABLET */
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background: linear-gradient(to top, #49a09d, #5f2c82);
@@ -19,6 +21,7 @@ Paleta de Cores
 
     #login {
         width: 80%;
+        height: 280PX;
     }
 
     #imagem {
@@ -34,6 +37,8 @@ Paleta de Cores
     }
 }
 
+/* CONFIGURACAO PARA DESCKTOP */
+
 @media screen and (min-width: 992px) {
     body {
         background: linear-gradient(to top, #49a09d, #5f2c82);
@@ -41,6 +46,7 @@ Paleta de Cores
 
     #login {
         width: 80%;
+        height: 315px;
     }
 
     #imagem {
